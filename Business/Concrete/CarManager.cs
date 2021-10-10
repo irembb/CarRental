@@ -113,7 +113,7 @@ namespace Business.Concrete
         private IResult CheckIfBrandLimitExceded()
         {
             var result = _brandService.GetAll();
-            if (result.Data.Count>38)
+            if (result.Data.Count>100)
             {
                 return new ErrorResult(Messages.BrandLimitExceded);
             }

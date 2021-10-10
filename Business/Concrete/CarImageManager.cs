@@ -90,7 +90,7 @@ namespace Business.Concrete
 
         private List<CarImage> CheckIfAnyCarImageExists(int carId)
         {
-            string path = @"\images\kiasportage.jpg";
+            string path = @"\images\default.jpg";
             var result = _carImageDal.GetAll(c => c.CarId == carId).Any();
 
             if (result)
